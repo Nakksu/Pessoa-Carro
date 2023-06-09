@@ -1,0 +1,28 @@
+CREATE DATABASE Carros;
+
+USE Carros;
+
+CREATE TABLE pessoa (
+    idPessoa INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    peso DOUBLE
+);
+
+select * from pessoa;
+
+CREATE TABLE carro (
+    idCarro INT PRIMARY KEY AUTO_INCREMENT,
+    combustivel VARCHAR(50),
+    peso DOUBLE,
+    marca VARCHAR(50),
+    anoFabricacao INT,
+    tipo VARCHAR(50),
+    cor VARCHAR(50),
+    placa VARCHAR(10),
+    numPortas INT
+);
+
+select * from carro;
+
+delete from carro where idCarro= 1; /**deletando um carro**/
